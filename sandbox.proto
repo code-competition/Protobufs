@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message SandboxRequest {
+    string user_id = 1;
+    bytes code = 2;
+    Language language = 3;
+}
+
+message SandboxResponse {
+    string user_id = 1;
+    bytes stdout = 2;
+    bytes stderr = 3;
+    uint32 runtime = 4;
+}
+
+enum Language {
+    RUST = 0;
+    RUBY = 1;
+    PYTHON = 2;
+    JAVASCRIPT = 3;
+}
