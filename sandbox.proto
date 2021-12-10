@@ -19,3 +19,7 @@ enum Language {
     PYTHON = 2;
     JAVASCRIPT = 3;
 }
+
+service SandboxService {
+    rpc Compile(SandboxRequest) returns (SandboxResponse);
+}
