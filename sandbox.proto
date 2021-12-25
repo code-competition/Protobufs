@@ -11,7 +11,8 @@ message SandboxRequest {
 message SandboxResponse {
     repeated string stdout = 2;
     repeated string stderr = 3;
-    uint64 runtime = 4;
+    bool success = 4;
+    uint64 runtime = 5;
 }
 
 enum Language {
