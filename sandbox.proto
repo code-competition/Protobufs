@@ -5,7 +5,8 @@ package sandbox;
 message SandboxRequest {
     string user_id = 1;
     string code = 2;
-    Language language = 3;
+    string stdin = 3;
+    Language language = 4;
 }
 
 message SandboxResponse {
